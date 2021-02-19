@@ -12,7 +12,7 @@ carts = list(range(100, 130))
 
 sql = 'insert into Schedule(vehicle_id, driver_id, date) Values'
 for d in dates:
-	date = '\'2018-05-{:02d}\''.format(d)
+	date = '\'2021-03-{:02d}\''.format(d)
 	drivers_d = np.random.permutation(drivers)[:40]
 	carts_d = np.random.permutation(carts)[:20]
 	for i, auto in enumerate(autos):
