@@ -29,7 +29,7 @@ async function createUser(profile){
 async function findOrCreateUser(req, res, next){
   // get user profile from Auth0
   try{
-	const response = await fetch('https://qychen13.auth0.com/userinfo', {headers: {'authorization': req.headers.authorization}});
+	const response = await fetch('https://dev-y0t9vh0x.us.auth0.com/userinfo', {headers: {'authorization': req.headers.authorization}});
 	const profile = await response.json();
   // console.log(profile);
   let student_id = await findUser(profile.email);
